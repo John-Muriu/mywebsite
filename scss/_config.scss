@@ -1,3 +1,4 @@
+//colors
 $primary-color: rgb(95, 240, 12);
 $secondary-color: hsl(69, 100%, 51%);
 $show-home-image: true;
@@ -33,7 +34,9 @@ $background-opacity: 0.1;
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
-  } @else {
+  }
+
+  @else {
     @return #fff;
   }
 }
