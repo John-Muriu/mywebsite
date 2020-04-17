@@ -20,6 +20,7 @@
     transform: rotate(180deg);
 
     .btn-line {
+
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -43,7 +44,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: .9;
   visibility: hidden;
 
   &.show {
@@ -105,7 +106,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
+    &.current>a {
       color: $secondary-color;
     }
   }
