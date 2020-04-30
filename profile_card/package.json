@@ -1,0 +1,19 @@
+{
+  "name": "profile_card",
+  "version": "1.0.0",
+  "description": "my_profile card",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/John-Muriu/profile_cards.git"
+  },
+  "author": "John Muriu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/John-Muriu/profile_cards/issues"
+  },
+  "homepage": "https://github.com/John-Muriu/profile_cards#readme"
+}

@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #051321; */
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 40rem;
+}
+
+.card-bio {
+  background-color: #639a67;
+  /* background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); */
+
+  padding: 3rem 3rem 8rem 3rem;
+  display: flex;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  z-index: 100;
+}
+.img-wrapper {
+  width: 15rem;
+  height: 11rem;
+  margin-right: 3rem;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-info {
+  width: 60%;
+  font-family: "Lato", "Open Sans";
+  color: #d8ebb5;
+  font-size: 15px;
+  text-shadow: 0 0.1re 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.person-info h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: #d9bf77;
+}
+
+.person.info p {
+  font-size: 1.8rem;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: -2.5rem;
+  right: 10rem;
+  width: 20rem;
+  height: 6rem;
+  background: #2b303a;
+  color: #d9bf77;
+  border-radius: 5rem;
+  border: none;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-family: "Lato", "Open Sans";
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.change .card-btn {
+  width: 10rem;
+  right: 5rem;
+  bottom: -3rem;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.card-btn-contact {
+  transition: all 0.5s, 50%;
+}
+
+.card-btn-contact,
+.card-btn i {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50% -50%);
+}
+.change .card-btn-contact {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s;
+}
+
+.change .card-btn i {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.card-btn i {
+  opacity: 0;
+  visibility: hidden;
+}
+.card-contact {
+  background-color: #2d814d;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+.change .card-contact {
+  transform: translateY(0);
+}
+
+.card-contact h4 {
+  font-family: "Lato", "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+  transform: scale(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.change .card-contact h4 {
+  transform: scale(1);
+}
+
+.card-social {
+  /* background-color: #fff; */
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.whatsapp {
+  transition: all 0.5s 0.3s;
+}
+.facebook {
+  transition: all 0.5s 0.5s;
+}
+.twitter {
+  transition: all 0.5s 0.7s;
+}
+
+.change .card-social {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.whatsapp .icon-wrapper {
+  background-color: hsl(135, 71%, 55%);
+}
+.facebook .icon-wrapper {
+  background-color: #3b5998;
+}
+
+.twitter .icon-wrapper {
+  background-color: #007bb9;
+}
+
+.icon-wrapper i {
+  font-size: 2rem;
+  color: #fff;
+}
+.contact-details h4 {
+  font-family: "Lato", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+
+.whatsapp h4 {
+  color: #dd4b59;
+}
+.facebook h4 {
+  color: #3b5998;
+}
+.twitter h4 {
+  color: #007bb9;
+}
+/* 
+.contact-details p {
+  font-family: "Lato", "open sans";
+  font-size: 1.4rem;
+  color: #444;
+  letter-spacing: 0.1rem;
+} */
+.contact-details a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.card-social span {
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #999;
+}
